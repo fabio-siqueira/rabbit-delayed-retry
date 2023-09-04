@@ -1,4 +1,4 @@
-## Retry Delayed Without X-Delay Plugin
+## Retry Delayed Messages Without X-Delay Plugin (Delay by message)
 
 ```mermaid
 graph BT
