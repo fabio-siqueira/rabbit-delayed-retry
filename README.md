@@ -1,6 +1,5 @@
 ## Retry Delayed Without X-Delay Plugin
 
-### teste
 ```mermaid
 graph BT
     subgraph Rabbit;
@@ -16,7 +15,7 @@ graph BT
     end;
     subgraph  
             ms[Consumer MS] -..-> E;  
-            ms == Can Retry(expiration property) ==> C;
+            ms == "Can Retry (expiration property)" ==> C;
             ms == Exceeds Retry Attemps==> F;
     end;
 ```
