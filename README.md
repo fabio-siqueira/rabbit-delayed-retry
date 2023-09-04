@@ -2,7 +2,7 @@
 
 
 ```mermaid
-graph BT
+flowchart BT
     subgraph Rabbit
         subgraph Producer Structure 
             A([Producer Exchange])
