@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: "rabbit-delayed-retry"
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+app:
+  rabbitmq:
+    max-concurrent-consumers: 10
+    concurrent-consumers: 5
+    prefetch-count: 5
+    initial-delay: 1000
+    max-delay: 10000
+    max-retry-attempts: 3
+    multiplier: 2
+
+
+
+
+
+
+logging:
+  level:
+    com:
+      example:
+        delayed-retry: debug
+    root: INFO
