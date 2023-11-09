@@ -5,6 +5,7 @@ graph BT
     subgraph Rabbit;
         subgraph Producer Structure; 
             A([Producer Exchange]);
+            ms1[Producer MS] ==> A;
         end
         subgraph ide1 [Consumer Structure];
             F[(Dead Letter Exchange)];
